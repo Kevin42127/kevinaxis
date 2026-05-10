@@ -11,7 +11,7 @@ import "./globals.css";
 import localFont from 'next/font/local';
 
 const fusion = localFont({
-  src: '/fonts/EurostileExtendedBlack.ttf',
+  src: './fonts/EurostileExtendedBlack.ttf',
   variable: '--font-fusion',
   display: 'swap',
 });
