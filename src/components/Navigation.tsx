@@ -84,6 +84,16 @@ export default function Navigation() {
                   </Link>
                 );
               })}
+              
+              {/* Buy Button */}
+              <Link
+                href="https://music.apple.com/tw/artist/kevin-axis/1895055156"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#f50057] hover:bg-[#d32f2f] text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ml-4"
+              >
+                Buy
+              </Link>
             </div>
           </div>
 
@@ -116,6 +126,16 @@ export default function Navigation() {
                   </Link>
                 );
               })}
+              
+              {/* Buy Button for Mobile */}
+              <Link
+                href="https://music.apple.com/tw/artist/kevin-axis/1895055156"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center px-3 py-2 bg-[#f50057] hover:bg-[#d32f2f] text-white rounded-md transition-all duration-300 text-sm font-medium"
+              >
+                Buy
+              </Link>
             </div>
           </div>
         )}
