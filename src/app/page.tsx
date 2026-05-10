@@ -302,8 +302,8 @@ export default function KevinAxisPage() {
             "@type": "MusicGroup",
             "name": "Kevin AXIS",
             "description": "Electronic music producer crafting immersive soundscapes",
-            "url": "https://kevinaxis.com",
-            "image": "https://kevinaxis.com/og-image.jpg",
+            "url": "https://kevinaxis.vercel.app",
+            "image": "https://kevinaxis.vercel.app/og-image.jpg",
             "sameAs": [
               "https://open.spotify.com/artist/kevinaxis",
               "https://music.apple.com/tw/artist/kevin-axis/1895055156",
