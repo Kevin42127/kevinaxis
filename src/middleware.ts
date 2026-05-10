@@ -12,10 +12,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: [
-    /*
-     * Skip all paths that should not be processed by middleware
-     */
-    '/((?!_next|api|favicon.ico).*)',
-  ],
+  matcher: '/((?!_next|api|favicon.ico).*)',
 } 
