@@ -13,6 +13,14 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+    /*
+     * Match all request paths except for:
+     * - /api (API routes)
+     * - /_next/static (static files)
+     * - /_next/image (image optimization files)
+     * - /favicon.ico (favicon file)
+     * - static assets (js, css, images, fonts)
+     */
+    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)).*)',
   ],
 } 
