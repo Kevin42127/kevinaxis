@@ -196,11 +196,8 @@ export default function KevinAxisPage() {
 
       {/* Footer / Social */}
       <footer className="py-16 px-6 border-t border-zinc-900">
-        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-8">
-          <div>
-            <h4 className="text-2xl font-bold mb-2">KEVIN AXIS</h4>
-          </div>
-
+        <div className="w-full flex flex-col items-center gap-8">
+          {/* 上方：三大平台 */}
           <div className="flex items-center gap-6">
             <a
               href="https://open.spotify.com/artist/5UFAVPHNNRY2fZ3oIfRtq3"
@@ -228,7 +225,8 @@ export default function KevinAxisPage() {
             </a>
           </div>
 
-          <p className="text-zinc-600 text-sm">
+          {/* 下方：版權資訊 */}
+          <p className="text-zinc-600 text-sm text-center">
             &copy; 2026 Kevin Axis. All rights reserved.
           </p>
         </div>
