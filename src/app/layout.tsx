@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner";
 import GlobalClientEffects from "@/components/GlobalClientEffects";
@@ -7,9 +7,13 @@ import Navigation from "@/components/Navigation";
 
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+// Custom Fusion font
+import localFont from 'next/font/local';
+
+const fusion = localFont({
+  src: '/fonts/EurostileExtendedBlack.ttf',
+  variable: '--font-fusion',
+  display: 'swap',
 });
 
 const jetbrainsMono = JetBrains_Mono({
@@ -113,7 +117,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
+        className={`${fusion.variable} ${jetbrainsMono.variable} antialiased`}
       >
         <Toaster />
         <ThemeProvider
