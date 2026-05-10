@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import AetherFlowHero from '@/components/ui/aether-flow-hero';
-import SplashCursor from '@/components/ui/SplashCursor';
 import { ChevronUp } from 'lucide-react';
 import { Metadata } from 'next';
 
@@ -76,18 +75,6 @@ export default function KevinAxisPage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* SplashCursor Effect */}
-      <SplashCursor 
-        RAINBOW_MODE={false}
-        COLOR="#9333ea"
-        SIM_RESOLUTION={128}
-        DYE_RESOLUTION={1440}
-        SPLAT_RADIUS={0.25}
-        SPLAT_FORCE={6000}
-        SHADING={true}
-        COLOR_UPDATE_SPEED={10}
-      />
-
       {/* Hero Section */}
       <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
         {/* Dynamic Background */}
