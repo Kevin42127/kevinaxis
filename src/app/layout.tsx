@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner";
 import GlobalClientEffects from "@/components/GlobalClientEffects";
+import Navigation from "@/components/Navigation";
 
 import "./globals.css";
 
@@ -103,6 +104,7 @@ export default function RootLayout({
 }>) {
   const content = (
     <>
+      <Navigation />
       {children}
       <GlobalClientEffects />
     </>

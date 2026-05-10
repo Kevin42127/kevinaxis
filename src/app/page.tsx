@@ -74,9 +74,9 @@ export default function KevinAxisPage() {
   const currentTrack = activeTrack !== null ? tracks[activeTrack] : null;
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white pt-16">
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
+      <section id="hero" className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
         {/* Dynamic Background */}
         <div className="absolute inset-0">
           <AetherFlowHero />
@@ -100,7 +100,7 @@ export default function KevinAxisPage() {
       </section>
 
       {/* Music Section */}
-      <section className="relative py-24 px-6">
+      <section id="music" className="relative py-24 px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="mb-16">
@@ -196,7 +196,7 @@ export default function KevinAxisPage() {
 
       {/* Footer / Social */}
       <footer className="py-16 px-6 border-t border-zinc-900">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
             <h4 className="text-2xl font-bold mb-2">KEVIN AXIS</h4>
           </div>
@@ -206,7 +206,7 @@ export default function KevinAxisPage() {
               href="https://open.spotify.com/artist/5UFAVPHNNRY2fZ3oIfRtq3"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-zinc-400 hover:text-[#1DB954] transition-colors duration-300"
+              className="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-300"
             >
               Spotify
             </a>
@@ -214,7 +214,7 @@ export default function KevinAxisPage() {
               href="https://music.apple.com/tw/artist/kevin-axis/1895055156"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-zinc-400 hover:text-[#f50057] transition-colors duration-300"
+              className="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-300"
             >
               Apple Music
             </a>
@@ -222,7 +222,7 @@ export default function KevinAxisPage() {
               href="https://music.youtube.com/channel/UCIvBvzIuECvci6CHE0h-JCg"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-zinc-400 hover:text-[#FF0000] transition-colors duration-300"
+              className="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-300"
             >
               YouTube Music
             </a>
