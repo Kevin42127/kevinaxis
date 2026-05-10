@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://kevinaxis.com"),
+  metadataBase: new URL("https://kevinaxis.vercel.app"),
   alternates: {
     canonical: "/",
     languages: {
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://kevinaxis.com",
+    url: "https://kevinaxis.vercel.app",
     title: "Kevin AXIS - Electronic Music Producer",
     description: "Electronic music producer crafting immersive soundscapes. Discover latest tracks on Spotify, Apple Music, and YouTube Music.",
     siteName: "Kevin AXIS",
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "ikA4eMUhLTjnxBSzCa1RpgmEg5SL_scysFac4hD4b-k",
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
   },
