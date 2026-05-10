@@ -41,17 +41,17 @@ const AetherFlowHero = () => {
             }
 
             draw() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-                ctx.fillStyle = this.color;
-                ctx.fill();
+                ctx!.beginPath();
+                ctx!.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+                ctx!.fillStyle = this.color;
+                ctx!.fill();
             }
 
             update() {
-                if (this.x > canvas.width || this.x < 0) {
+                if (this.x > canvas!.width || this.x < 0) {
                     this.directionX = -this.directionX;
                 }
-                if (this.y > canvas.height || this.y < 0) {
+                if (this.y > canvas!.height || this.y < 0) {
                     this.directionY = -this.directionY;
                 }
 
@@ -90,9 +90,13 @@ const AetherFlowHero = () => {
         }
 
         const resizeCanvas = () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            init(); 
+            // Get the parent container's dimensions
+            const container = canvas.parentElement;
+            if (container) {
+                canvas.width = container.clientWidth;
+                canvas.height = container.clientHeight;
+                init(); 
+            }
         };
         window.addEventListener('resize', resizeCanvas);
         resizeCanvas();
@@ -179,8 +183,8 @@ const AetherFlowHero = () => {
     return (
         // Just the canvas background, no content
         <div className="relative h-full w-full overflow-hidden">
-            {/* The canvas is the background */}
-            <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full"></canvas>
+            {/* The canvas is the background - positioned within hero section */}
+            <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full z-0"></canvas>
         </div>
     );
 };
