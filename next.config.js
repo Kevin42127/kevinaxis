@@ -2,6 +2,7 @@
 const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
+    dirs: ['src/components/ui'], // 忽略第三方組件的ESLint錯誤
   },
   typescript: {
     ignoreBuildErrors: true,
