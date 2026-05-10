@@ -1,19 +1,11 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
-import localFont from 'next/font/local';
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner";
 import GlobalClientEffects from "@/components/GlobalClientEffects";
 import Navigation from "@/components/Navigation";
 
 import "./globals.css";
-
-const scienceGothic = localFont({
-  src: 'https://fonts.gstatic.com/s/sciencegothic/v21/64P2AGMc2uIW1P3FjPqP0Ls.woff2',
-  variable: '--font-science-gothic',
-  display: 'swap',
-  weight: ['400', '700'],
-});
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -116,7 +108,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${scienceGothic.variable} ${jetbrainsMono.variable} antialiased`}
+        className={`${jetbrainsMono.variable} antialiased`}
       >
         <Toaster />
         <ThemeProvider
