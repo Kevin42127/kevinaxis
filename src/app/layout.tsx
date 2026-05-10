@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
+import localFont from 'next/font/local';
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner";
 import GlobalClientEffects from "@/components/GlobalClientEffects";
@@ -7,13 +8,11 @@ import Navigation from "@/components/Navigation";
 
 import "./globals.css";
 
-// Custom Fusion font
-import localFont from 'next/font/local';
-
-const fusion = localFont({
-  src: './fonts/EurostileExtendedBlack.ttf',
-  variable: '--font-fusion',
+const scienceGothic = localFont({
+  src: 'https://fonts.gstatic.com/s/sciencegothic/v21/64P2AGMc2uIW1P3FjPqP0Ls.woff2',
+  variable: '--font-science-gothic',
   display: 'swap',
+  weight: ['400', '700'],
 });
 
 const jetbrainsMono = JetBrains_Mono({
@@ -117,7 +116,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${fusion.variable} ${jetbrainsMono.variable} antialiased`}
+        className={`${scienceGothic.variable} ${jetbrainsMono.variable} antialiased`}
       >
         <Toaster />
         <ThemeProvider
