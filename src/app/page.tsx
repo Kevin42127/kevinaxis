@@ -203,7 +203,7 @@ export default function KevinAxisPage() {
 
           <div className="flex items-center gap-6">
             <a
-              href="https://open.spotify.com/artist/kevinaxis"
+              href="https://open.spotify.com/artist/5UFAVPHNNRY2fZ3oIfRtq3"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-zinc-400 hover:text-[#1DB954] transition-colors duration-300"
