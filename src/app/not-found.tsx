@@ -17,6 +17,20 @@ export default function NotFound() {
       >
         Return to Home
       </Link>
+
+      {/* Custom text selection style - same as homepage */}
+      <style jsx global>{`
+        /* Custom text selection style - white background, black text */
+        ::selection {
+          background-color: #ffffff;
+          color: #000000;
+        }
+
+        ::-moz-selection {
+          background-color: #ffffff;
+          color: #000000;
+        }
+      `}</style>
     </div>
   );
 }
