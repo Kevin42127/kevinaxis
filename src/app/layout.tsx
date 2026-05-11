@@ -56,6 +56,11 @@ export const metadata: Metadata = {
       "zh-TW": "/zh",
     },
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-96x96.png",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
