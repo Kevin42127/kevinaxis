@@ -38,7 +38,6 @@ export default function Navigation() {
   const navItems = [
     { name: 'Home', href: '#hero' },
     { name: 'Music', href: '#music' },
-    { name: 'Contact', href: '/contact' },
     { name: 'Spotify', href: 'https://open.spotify.com/artist/5UFAVPHNNRY2fZ3oIfRtq3' },
     { name: 'Apple Music', href: 'https://music.apple.com/tw/artist/kevin-axis/1895055156' },
     { name: 'YouTube Music', href: 'https://music.youtube.com/channel/UCIvBvzIuECvci6CHE0h-JCg' },
