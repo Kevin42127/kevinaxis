@@ -19,8 +19,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Kevin AXIS - Electronic Music Producer",
-    template: "%s | Kevin AXIS"
+    default: "The Official Website of Kevin AXIS - Electronic Music Producer",
+    template: "%s | The Official Website of Kevin AXIS"
   },
   description: "Kevin AXIS - Electronic music producer crafting immersive soundscapes. Discover latest tracks including 3AM, Somebody Like You, Night Lo-fi Version, and 3AM Remix. Available on Spotify, Apple Music, and YouTube Music.",
   keywords: [
