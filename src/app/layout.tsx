@@ -19,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "The Official Website of Kevin AXIS - Electronic Music Producer",
+    default: "The Official Website of Kevin AXIS",
     template: "%s | The Official Website of Kevin AXIS"
   },
   description: "Kevin AXIS - Electronic music producer crafting immersive soundscapes. Discover latest tracks including Alone, In My Mind, 3AM, Somebody Like You, Night Lo-fi Version, and 3AM Remix. Available on Spotify, Apple Music, and YouTube Music.",
@@ -98,6 +98,11 @@ export const metadata: Metadata = {
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
   },
+  other: {
+    'google-site-verification': 'ikA4eMUhLTjnxBSzCa1RpgmEg5SL_scysFac4hD4b-k',
+    'google-ads-verification': 'YOUR_GOOGLE_ADS_VERIFICATION_CODE', // Replace with your Google Ads verification code
+    'google-adsense-account': 'ca-pub-7335462712833157',
+  },
 };
 
 export default function RootLayout({
@@ -119,6 +124,38 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
         <Toaster />
+        
+        {/* Structured Data for Google Ads */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Musician",
+              "name": "Kevin AXIS",
+              "url": "https://kevinaxis.vercel.app",
+              "description": "Electronic music producer crafting immersive soundscapes",
+              "sameAs": [
+                "https://open.spotify.com/artist/5UFAVPHNNRY2fZ3oIfRtq3",
+                "https://music.apple.com/tw/artist/kevin-axis/1895055156",
+                "https://music.youtube.com/channel/UCIvBvzIuECvci6CHE0h-JCg"
+              ],
+              "potentialAction": {
+                "@type": "ListenAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://kevinaxis.vercel.app/music"
+                },
+                "expectsAcceptanceOf": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD"
+                }
+              }
+            })
+          }}
+        />
+        
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
