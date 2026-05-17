@@ -20,6 +20,15 @@ export default function Navigation() {
   const handleNavClick = (e: React.MouseEvent, href: string) => {
     if (href.startsWith('#')) {
       e.preventDefault();
+      
+      // 如果當前不在首頁，導航到首頁的對應瞄點
+      if (window.location.pathname !== '/') {
+        window.location.href = '/' + href;
+        setIsOpen(false);
+        return;
+      }
+
+      // 在首頁時使用錨點滾動
       const element = document.querySelector(href);
       if (element) {
         const offset = 64; // 導覽列高度
@@ -38,6 +47,7 @@ export default function Navigation() {
   const navItems = [
     { name: 'Home', href: '#hero' },
     { name: 'Music', href: '#music' },
+    { name: 'Contact', href: '/contact' },
     { name: 'Spotify', href: 'https://open.spotify.com/artist/5UFAVPHNNRY2fZ3oIfRtq3' },
     { name: 'Apple Music', href: 'https://music.apple.com/tw/artist/kevin-axis/1895055156' },
     { name: 'YouTube Music', href: 'https://music.youtube.com/channel/UCIvBvzIuECvci6CHE0h-JCg' },
