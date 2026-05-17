@@ -51,10 +51,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://kevinaxis.vercel.app"),
   alternates: {
     canonical: "/",
-    languages: {
-      "en-US": "/en",
-      "zh-TW": "/zh",
-    },
   },
   icons: {
     icon: "/favicon.ico",

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://kevinaxis.com/sitemap.xml
+Sitemap: https://kevinaxis.vercel.app/sitemap.xml
 
 # Allow search engines to crawl music content
 Allow: /music
