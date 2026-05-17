@@ -1,3 +1,5 @@
+'use client';
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center px-6">
@@ -45,6 +47,20 @@ export default function ContactPage() {
           </button>
         </form>
       </div>
+
+      {/* Custom text selection style - same as homepage */}
+      <style jsx global>{`
+        /* Custom text selection style - white background, black text */
+        ::selection {
+          background-color: #ffffff;
+          color: #000000;
+        }
+
+        ::-moz-selection {
+          background-color: #ffffff;
+          color: #000000;
+        }
+      `}</style>
     </div>
   );
 }
