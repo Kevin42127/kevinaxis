@@ -10,6 +10,10 @@ export default function NotFound() {
         Oops! Something went wrong!
       </h1>
 
+      <p className="text-white text-center text-lg mt-4">
+        The Page is not found
+      </p>
+
       {/* Return Button */}
       <Link 
         href="/"

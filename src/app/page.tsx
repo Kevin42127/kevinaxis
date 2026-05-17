@@ -7,6 +7,20 @@ import { Metadata } from 'next';
 
 const tracks = [
   {
+    title: 'Alone',
+    duration: '3:00',
+    spotifyAlbumId: '5Fy5IBtAd8b6Vzssf1Zl5U',
+    youtubeId: 'yGr2xQZW8Kw',
+    appleId: '6768328046',
+  },
+  {
+    title: 'In My Mind',
+    duration: '2:45',
+    spotifyAlbumId: '0P5MIn4MW21sADFMz4TU8N',
+    youtubeId: 'ZdaV_EqpSc4',
+    appleId: '6768328334',
+  },
+  {
     title: '3AM',
     duration: '3:09',
     spotifyId: '1FtUFN1XWB0RY0RHoTa155',
@@ -148,7 +162,10 @@ export default function KevinAxisPage() {
               <span className="text-sm text-zinc-500">Play &ldquo;{currentTrack.title}&rdquo; on:</span>
               <div className="flex flex-col md:flex-row gap-3 md:gap-4 w-full md:w-auto">
                 <a
-                  href={`https://open.spotify.com/track/${currentTrack.spotifyId}`}
+                  href={currentTrack.spotifyAlbumId 
+                    ? `https://open.spotify.com/album/${currentTrack.spotifyAlbumId}`
+                    : `https://open.spotify.com/track/${currentTrack.spotifyId}`
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full md:w-auto text-center px-4 py-3 rounded-full text-sm font-medium bg-[#1DB954] text-black hover:opacity-80 transition-all duration-300"
