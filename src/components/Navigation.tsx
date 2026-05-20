@@ -47,6 +47,7 @@ export default function Navigation() {
   const navItems = [
     { name: 'Home', href: '#hero' },
     { name: 'Music', href: '#music' },
+    { name: 'Shop', href: 'https://kevinaxis.bandcamp.com/' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
     { name: 'Privacy', href: '/privacy' },
